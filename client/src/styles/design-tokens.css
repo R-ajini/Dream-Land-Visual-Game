@@ -1,0 +1,131 @@
+/* ============================================
+   DREAM ISLAND — Design Tokens
+   Explore. Discover. Collect. Dream.
+   ============================================ */
+
+:root {
+  /* ── Primary Colors ── */
+  --color-turquoise: #55C6C2;
+  --color-turquoise-light: #7DD9D6;
+  --color-turquoise-dark: #3BA8A4;
+  --color-turquoise-50: rgba(85, 198, 194, 0.1);
+  --color-turquoise-200: rgba(85, 198, 194, 0.3);
+
+  --color-green: #8BCB88;
+  --color-green-light: #A8DCA6;
+  --color-green-dark: #6AB567;
+
+  --color-cream: #FFF5E6;
+  --color-cream-dark: #F5E6D0;
+
+  --color-coral: #FF8F87;
+  --color-coral-light: #FFB3AD;
+  --color-coral-dark: #E8726A;
+
+  --color-sky: #A8D8F0;
+  --color-sky-light: #C5E8F7;
+  --color-sky-dark: #7BC0E0;
+
+  --color-dark: #34495E;
+  --color-dark-light: #4A6274;
+  --color-dark-lighter: #627D91;
+
+  /* ── Neutrals ── */
+  --color-white: #FFFFFF;
+  --color-gray-50: #F8FAFB;
+  --color-gray-100: #F0F3F5;
+  --color-gray-200: #E2E8ED;
+  --color-gray-300: #CBD5DC;
+  --color-gray-400: #9BAAB5;
+  --color-gray-500: #6B7C8A;
+  --color-gray-600: #4A5B6A;
+
+  /* ── Semantic Colors ── */
+  --color-success: #6BCB77;
+  --color-warning: #FFD93D;
+  --color-error: #FF6B6B;
+  --color-info: #74B9FF;
+
+  /* ── Gradients ── */
+  --gradient-tropical: linear-gradient(135deg, #55C6C2 0%, #8BCB88 100%);
+  --gradient-sunset: linear-gradient(135deg, #FF8F87 0%, #FFB347 100%);
+  --gradient-ocean: linear-gradient(135deg, #1a2a6c 0%, #2d6187 40%, #55C6C2 100%);
+  --gradient-hero: linear-gradient(180deg, #0a1628 0%, #1a3a5c 30%, #2d7d9a 60%, #55C6C2 85%, #A8D8F0 100%);
+  --gradient-sky: linear-gradient(180deg, #A8D8F0 0%, #C5E8F7 100%);
+  --gradient-coral: linear-gradient(135deg, #FF8F87 0%, #FF6B81 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafb 100%);
+  --gradient-dark: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+  --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+
+  /* ── Typography ── */
+  --font-primary: 'Nunito', 'Segoe UI', sans-serif;
+  --font-secondary: 'Quicksand', 'Segoe UI', sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  --text-6xl: 4.5rem;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* ── Spacing (4px scale) ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* ── Border Radius ── */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(52, 73, 94, 0.08);
+  --shadow-md: 0 4px 12px rgba(52, 73, 94, 0.1);
+  --shadow-lg: 0 8px 24px rgba(52, 73, 94, 0.12);
+  --shadow-xl: 0 16px 48px rgba(52, 73, 94, 0.15);
+  --shadow-glow: 0 0 20px rgba(85, 198, 194, 0.4);
+  --shadow-warm-glow: 0 0 20px rgba(255, 143, 135, 0.4);
+  --shadow-card: 0 4px 20px rgba(52, 73, 94, 0.08);
+  --shadow-card-hover: 0 8px 32px rgba(52, 73, 94, 0.15);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ── Z-Index Layers ── */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 500;
+  --z-tooltip: 600;
+  --z-notification: 700;
+  --z-max: 9999;
+
+  /* ── Layout ── */
+  --max-width: 1200px;
+  --navbar-height: 72px;
+}

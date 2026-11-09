@@ -1,0 +1,237 @@
+/* ============================================
+   DREAM ISLAND — Game Page Styles
+   ============================================ */
+
+.game-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #0a1628;
+}
+
+.game-canvas-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Loading Screen ── */
+.game-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-hero);
+  z-index: 100;
+  transition: opacity 0.8s ease;
+}
+
+.game-loading.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game-loading-icon {
+  font-size: 4rem;
+  animation: float 2s ease-in-out infinite;
+  margin-bottom: var(--space-lg);
+}
+
+.game-loading h2 {
+  font-family: var(--font-secondary);
+  color: var(--color-white);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-sm);
+}
+
+.game-loading p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.game-loading-bar-track {
+  width: 240px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.game-loading-bar-fill {
+  height: 100%;
+  background: var(--gradient-tropical);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+/* ── HUD Overlay ── */
+.game-hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10;
+  padding: var(--space-md);
+}
+
+.game-hud > * {
+  pointer-events: auto;
+}
+
+/* Top bar */
+.hud-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hud-player-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  color: var(--color-white);
+}
+
+.hud-player-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-tropical);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.hud-player-name {
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+}
+
+.hud-score {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-sm);
+  color: var(--color-turquoise-light);
+  font-weight: var(--font-semibold);
+}
+
+.hud-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.hud-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.hud-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.08);
+}
+
+/* Bottom controls hint */
+.hud-bottom {
+  position: absolute;
+  bottom: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--space-md);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-full);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-xs);
+}
+
+.hud-control {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hud-key {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-bold);
+  font-size: 0.65rem;
+  color: var(--color-white);
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Mission tracker */
+.hud-mission {
+  position: absolute;
+  top: 70px;
+  right: var(--space-md);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-xl);
+  color: var(--color-white);
+  max-width: 240px;
+  font-size: var(--text-sm);
+}
+
+.hud-mission-label {
+  font-size: var(--text-xs);
+  color: var(--color-turquoise);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.hud-mission-title {
+  font-weight: var(--font-bold);
+  margin-bottom: 4px;
+}
+
+.hud-mission-progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.hud-mission-bar-track {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.hud-mission-bar-fill {
+  height: 100%;
+  background: var(--gradient-tropical);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+.hud-mission-count {
+  font-size: var(--text-xs);
+  color: rgba(255, 255, 255, 0.6);
+}
